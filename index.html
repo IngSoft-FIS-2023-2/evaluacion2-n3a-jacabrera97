@@ -8,21 +8,21 @@
 </head>
 
 <body class="p-3">
-    <h2>Ficha de libro</h2>
-    <img src="book-icon.png" height="100">
+    <h1>Ficha de libro</h1>
+    <img src="book-icon.png" height="100" alt="imagen">
     <p> Este formulario permite ingresar fichas de libros para la bliblioteca.</p>
-    <form style="background-color:slategrey" class="p-3">
+    <form style="background-color:whitesmoke" class="p-3">
         <div class="mb-3">
             <label for="titulo">Título:</label>
-            <input type="text" required>
+            <input id="titulo" type="text" required>
         </div>
         <div class="mb-3">
-            <label>Autor:</label>
-            <input>
+            <label for="autor">Autor:</label>
+            <input id="autor">
         </div>
         <div class="mb-3">
-            <label for="titulo">Número de Páginas:</label>
-            <input type="number" min="1" max="999">
+            <label for="numerodepagina">Número de Páginas:</label>
+            <input id="numerodepagina" type="number" min="1" max="999">
         </div>
         <div class="form-check">
             <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
@@ -37,7 +37,7 @@
             </label>
           </div>
 
-        <button class="btn btn-secondary" type="submit" style=background-color:orange>Ingresar</button>
+        <button class="btn btn-secondary" type="submit">Ingresar</button>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
